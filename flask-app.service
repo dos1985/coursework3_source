@@ -1,0 +1,11 @@
+[Unit]
+Description=flask-app
+After=network.target
+
+[Service]
+
+WorkingDirectory=/home/vmrgroup/app
+ExecStart=/home/vmrgroup/app/venv/bin/python run.py
+
+[install]
+Wantedby=multi-user.target
