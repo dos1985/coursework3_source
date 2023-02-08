@@ -1,3 +1,4 @@
+import gunicorn
 from flask import Flask
 from config import Config
 from api.api import blueprint_api
@@ -30,6 +31,8 @@ def server_error(e):
 
 app.register_blueprint(main_blueprint)
 app.register_blueprint(blueprint_api)
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
