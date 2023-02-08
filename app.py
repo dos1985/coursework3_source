@@ -34,4 +34,5 @@ app.register_blueprint(blueprint_api)
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=8080, debug=True)
+    app.run(host='95.59.93.239', port=5000, debug=True)
+# http://95.59.93.239:5000/
