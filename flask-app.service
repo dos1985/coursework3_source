@@ -6,6 +6,8 @@ After=network.target
 
 WorkingDirectory=/home/vmrgroup/app
 ExecStart=/home/vmrgroup/app/venv/bin/python run.py
-
+User=vmrgroup
 [install]
-Wantedby=multi-user.target
+
+
+WantedBy=multi-user.target
