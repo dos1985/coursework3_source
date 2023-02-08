@@ -34,4 +34,4 @@ app.register_blueprint(blueprint_api)
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, port=5458)
