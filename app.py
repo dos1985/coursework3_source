@@ -1,4 +1,3 @@
-import gunicorn
 from flask import Flask
 from config import Config
 from api.api import blueprint_api
