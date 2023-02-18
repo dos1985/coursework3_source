@@ -5,7 +5,7 @@ After=network.target
 [Service]
 
 WorkingDirectory=/home/vmrgroup/app
-ExecStart=/home/vmrgroup/app/venv/bin/python app.py
+ExecStart=/home/vmrgroup/app/env/bin/python app.py
 User=vmrgroup
 
 
