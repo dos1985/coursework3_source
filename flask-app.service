@@ -6,7 +6,6 @@ After=network.target
 
 WorkingDirectory=/home/vmrgroup/app
 Environment="PATH=/home/vmrgroup/app/env/bin"
-ExecStart=/home/vmrgroup/app/env/bin/python app.py
 ExecStart=/home/vmrgroup/app/env/bin/gunicorn --workers 3 --bind unix:myproject.sock -m 007 wsgi:app
 User=vmrgroup
 Group=www-data
